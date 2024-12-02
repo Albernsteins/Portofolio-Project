@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="subnetting.css">
+    <title>Subnetting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,
+    100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" 
+    rel="stylesheet">
+    <link rel="icon" type="x-icon" href="images/transfer-alt-regular-24.png"/>
+</head>
+<nav>
+    <li class="navigation-list">
+        <ul class="navigation-menus"><a href="index.html">Home</a></ul>
+        <ul class="navigation-menus"><a href="Luis.html">Luis</a></ul>
+        <ul class="navigation-menus"><a href="https://mike1711.github.io/PORTO/portofolio.html">Michael</a></ul>
+        <ul class="navigation-menus"><a href="About.html">About</a></ul>
+    </li>
+    <li class="navigation-list">
+        <ul class="navigation-menus"><a href="subnetting.html">Subnetting</a></ul>
+        <ul class="navigation-menus"><a href="crimping.html">LAN Crimping</a></ul>
+        <ul class="navigation-menus"><a href="pcbuilding.html">PC Building</a></ul>
+    </li>
+</nav>
+<body>
+    <!-- <div class="bar-container">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div class="bar4"></div>
+        <div class="bar5"></div>
+        <div class="bar6"></div>
+        <div class="bar7"></div>
+        <div class="bar8"></div>
+    </div> -->
+<main>
+
+    <div class="subnet-flex">
+
+        <div class="subnet-container">
+            <h1 class="subnet-title">Subnetting</h1>
+            <p>sebenarnya gatau untuk apa, tapi yang penting bisa ;)</p>
+        </div>
+
+        <hr class="line" width="1" size="450"/>
+
+        <div class="subnet-main-container">
+
+            <div class="subnet-images">
+                <img src="images/b.webp" alt="">
+            </div>
+
+            <div class="subnet-texts">
+                <p><strong>Analisa:</strong> 172.16.0.0 berarti kelas B, dengan Subnet Mask /18 berarti 
+                <br>11111111.11111111.11000000.00000000 (255.255.192.0).<br><strong>perhitungan:</strong>
+                </p>
+                <ol>
+                    <li><strong>Jumlah Subnet</strong> = 2x, dimana x adalah banyaknya binari 1 pada 2 oktet terakhir. 
+                        Jadi Jumlah Subnet adalah 22 = 4 subnet</li>
+                    <li><strong>Jumlah Host per Subnet</strong>  = 2y – 2, dimana y adalah adalah kebalikan dari x yaitu banyaknya binari 0 pada 2 oktet terakhir. 
+                        Jadi jumlah host per subnet adalah 214 – 2 = 16.382 host</li>
+                    <li><strong>Blok Subnet</strong>  = 256 – 192 = 64. Subnet berikutnya adalah 64 + 64 = 128, 
+                        dan 128+64=192. Jadi subnet lengkapnya adalah 0, 64, 128, 192.</li>
+                    <li><strong>Alamat host dan broadcast yang valid?</strong></li>
+                </ol>
+                <div class="grid-broadcast">
+                    <p class="broadcast-texts"><strong>Subnet</strong></p>
+                    <p class="broadcast-texts">172.16.0.0</p>
+                    <p class="broadcast-texts">172.16.0.128	</p>
+                    <p class="broadcast-texts">172.16.1.0</p>
+                    <p class="broadcast-texts">...172.16.255.128</p>
+
+                    <p class="broadcast-texts"><strong>Host Pertama</strong></p>
+                    <p class="broadcast-texts">172.16.0.1</p>
+                    <p class="broadcast-texts">172.16.0.129</p>
+                    <p class="broadcast-texts">172.16.1.1</p>
+                    <p class="broadcast-texts">...172.16.255.129</p>
+                    
+                    <p class="broadcast-texts"><strong>Host Terakhir</strong></p>
+                    <p class="broadcast-texts">172.16.0.126</p>
+                    <p class="broadcast-texts">172.16.0.254</p>
+                    <p class="broadcast-texts">172.16.1.126</p>
+                    <p class="broadcast-texts">...172.16.255.254</p>
+                    
+                    <p class="broadcast-texts"><strong>Broadcast</strong></p>
+                    <p class="broadcast-texts">172.16.0.127</p>
+                    <p class="broadcast-texts">172.16.0.255</p>
+                    <p class="broadcast-texts">172.16.1.127</p>
+                    <p class="broadcast-texts">...172.16.255.255</p>
+                </div>
+                <p>Intinya, Gampang Saja. Tetap tenang dan Lanjutkan.</p>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+
+.luis-main-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    right: 5em;
+    gap: 5em;
+}
+
+.luis-images {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.luis-picture {
+    padding-top: 3em;
+    scale: 0.7;
+}
+
+.luis-absolute-images {
+    background-color: aqua;
+    position: absolute;
+}
+
+.luis-racket {
+    position: absolute;
+}
+
+.luis-pagani {
+    position: absolute;
+}
+
